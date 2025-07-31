@@ -1,0 +1,113 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="RWRICA PIZZA - Deliciosa comida mexicana especializada en tacos auténticos. Menú amplio, fresco y con entrega rápida.">
+    <title>RWRICA PIZZA - Tacos Auténticos Mexicanos</title>
+    <!-- Enlace a Google Fonts para tipografías modernas y profesionales -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Enlace a Font Awesome para iconos dinámicos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Enlace al archivo CSS separado para mejor organización -->
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">RWRICA PIZZA</div>
+            <ul class="nav-links">
+                <li><a href="#hero">Inicio</a></li>
+                <li><a href="#menu">Menú</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <div class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h1>Bienvenido a RWRICA PIZZA</h1>
+            <p>Disfruta de nuestros tacos auténticos mexicanos, preparados con ingredientes frescos y sabores tradicionales. ¡Elige tu favorito y ordénalo ahora!</p>
+            <a href="#menu" class="btn">Ver Menú</a>
+        </section>
+
+        <section id="menu">
+            <h2>Nuestro Menú de Tacos</h2>
+            <div class="menu-grid">
+                <!-- Ejemplo de items del menú, puedes agregar más -->
+                <article class="menu-item">
+                    <img src="https://via.placeholder.com/300x200?text=Taco+al+Pastor" alt="Taco al Pastor">
+                    <div class="menu-item-content">
+                        <h3>Taco al Pastor</h3>
+                        <p>Delicioso taco con carne marinada, piña y cilantro.</p>
+                        <span class="price">$2.50</span>
+                        <button class="add-to-cart btn" data-name="Taco al Pastor" data-price="2.50">Añadir al Carrito</button>
+                    </div>
+                </article>
+
+                <article class="menu-item">
+                    <img src="https://via.placeholder.com/300x200?text=Taco+de+Carne+Asada" alt="Taco de Carne Asada">
+                    <div class="menu-item-content">
+                        <h3>Taco de Carne Asada</h3>
+                        <p>Carne asada jugosa con cebolla, cilantro y salsa.</p>
+                        <span class="price">$3.00</span>
+                        <button class="add-to-cart btn" data-name="Taco de Carne Asada" data-price="3.00">Añadir al Carrito</button>
+                    </div>
+                </article>
+
+                <article class="menu-item">
+                    <img src="https://via.placeholder.com/300x200?text=Taco+de+Pollo" alt="Taco de Pollo">
+                    <div class="menu-item-content">
+                        <h3>Taco de Pollo</h3>
+                        <p>Pollo sazonado con verduras frescas y guacamole.</p>
+                        <span class="price">$2.00</span>
+                        <button class="add-to-cart btn" data-name="Taco de Pollo" data-price="2.00">Añadir al Carrito</button>
+                    </div>
+                </article>
+
+                <!-- Agrega más items según el menú amplio -->
+            </div>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>Envíanos un mensaje o llámanos para pedidos especiales.</p>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+                
+                <button type="submit" class="btn">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 RWRICA PIZZA. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Modal para el carrito (dinámico con JS) -->
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Tu Carrito</h2>
+            <ul id="cart-items"></ul>
+            <p>Total: <span id="cart-total">$0.00</span></p>
+            <button id="checkout" class="btn">Proceder al Pago</button>
+        </div>
+    </div>
+
+    <!-- Script JS para dinamismo -->
+    <script src="script.js"></script>
+</body>
+</html>
