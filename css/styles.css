@@ -80,7 +80,9 @@ main {
     margin: 2rem auto;
     padding: 0 1rem;
 }
-
+main h1{
+    color: #FF4500;
+}
 #hero {
     background: url('https://via.placeholder.com/1200x400?text=Deliciosos+Tacos+Mexicanos') no-repeat center/cover;
     color: white;
