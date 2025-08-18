@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
-    <header>
+    <div class="header">
         <nav>
             <div class="logo">RWRICA PIZZA</div>
             <ul class="nav-links">
@@ -27,20 +27,20 @@
                 <span class="cart-count">0</span>
             </div>
         </nav>
-    </header>
+    </div>
 
-    <main>
-        <section id="hero">
+    <div class="main">
+        <div id="hero">
             <h1>Bienvenido a RWRICA PIZZA</h1>
             <p>Disfruta de nuestros tacos auténticos mexicanos, preparados con ingredientes frescos y sabores tradicionales. ¡Elige tu favorito y ordénalo ahora!</p>
             <a href="#menu" class="btn">Ver Menú</a>
-        </section>
+        </div>
 
-        <section id="menu">
+        <div id="menu">
             <h2>Nuestro Menú de Tacos</h2>
             <div class="menu-grid">
                 <!-- Ejemplo de items del menú, puedes agregar más -->
-                <article class="menu-item">
+                <div class="menu-item">
                     <img src="https://via.placeholder.com/300x200?text=Taco+al+Pastor" alt="Taco al Pastor">
                     <div class="menu-item-content">
                         <h3>Taco al Pastor</h3>
@@ -48,9 +48,9 @@
                         <span class="price">$2.50</span>
                         <button class="add-to-cart btn" data-name="Taco al Pastor" data-price="2.50">Añadir al Carrito</button>
                     </div>
-                </article>
+                </div>
 
-                <article class="menu-item">
+                <div class="menu-item">
                     <img src="https://via.placeholder.com/300x200?text=Taco+de+Carne+Asada" alt="Taco de Carne Asada">
                     <div class="menu-item-content">
                         <h3>Taco de Carne Asada</h3>
@@ -58,9 +58,9 @@
                         <span class="price">$3.00</span>
                         <button class="add-to-cart btn" data-name="Taco de Carne Asada" data-price="3.00">Añadir al Carrito</button>
                     </div>
-                </article>
+                </div>
 
-                <article class="menu-item">
+                <div class="menu-item">
                     <img src="https://via.placeholder.com/300x200?text=Taco+de+Pollo" alt="Taco de Pollo">
                     <div class="menu-item-content">
                         <h3>Taco de Pollo</h3>
@@ -68,13 +68,13 @@
                         <span class="price">$2.00</span>
                         <button class="add-to-cart btn" data-name="Taco de Pollo" data-price="2.00">Añadir al Carrito</button>
                     </div>
-                </article>
+                </div>
 
                 <!-- Agrega más items según el menú amplio -->
             </div>
-        </section>
+        </div>
 
-        <section id="contacto">
+        <div id="contacto">
             <h2>Contacto</h2>
             <p>Envíanos un mensaje o llámanos para pedidos especiales.</p>
             <form>
@@ -89,12 +89,12 @@
                 
                 <button type="submit" class="btn">Enviar</button>
             </form>
-        </section>
-    </main>
+        </div>
+    </div>
 
-    <footer>
+    <div class="footer">
         <p>&copy; 2025 RWRICA PIZZA. Todos los derechos reservados.</p>
-    </footer>
+    </div>
 
     <!-- Modal para el carrito (dinámico con JS) -->
     <div id="cart-modal" class="modal">
