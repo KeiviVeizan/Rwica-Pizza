@@ -188,15 +188,18 @@
                 <div id="videos" class="content-panel active">
                     <h3>Videos de Pizza4U</h3>
                     <div class="video-grid">
-                        <div class="video-card">
+                        <a href="https://www.youtube.com/watch?v=j2jySJ6qZ10" target="_blank">
+                            <div class="video-card">
                             <div class="video-thumbnail">
                                 <i class="fas fa-play"></i>
                                 <span>02:45</span>
                             </div>
                             <h4>Cómo Hacemos Nuestras Pizzas</h4>
                             <p>Descubre el proceso artesanal detrás de cada pizza</p>
-                        </div>
-                        <div class="video-card">
+                        </div>  
+                        </a>
+                        <a href="https://www.youtube.com/watch?v=crdtrzZj3fo" target="_blank">
+                            <div class="video-card">
                             <div class="video-thumbnail">
                                 <i class="fas fa-play"></i>
                                 <span>01:30</span>
@@ -204,14 +207,17 @@
                             <h4>Ingredientes Frescos</h4>
                             <p>La calidad que marca la diferencia</p>
                         </div>
-                        <div class="video-card">
+                        </a>
+                        <a href="https://www.youtube.com/watch?v=25kzn6oJO1o" target="_blank">
+                            <div class="video-card">
                             <div class="video-thumbnail">
                                 <i class="fas fa-play"></i>
                                 <span>03:15</span>
                             </div>
                             <h4>Tour por Nuestra Cocina</h4>
                             <p>Conoce nuestras instalaciones</p>
-                        </div>
+                            </div>
+                        </a>
                     </div>
                 </div>
 
@@ -812,6 +818,9 @@
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 2rem;
+        }
+        .video-grid a{
+            text-decoration: none;
         }
 
         .video-card {
