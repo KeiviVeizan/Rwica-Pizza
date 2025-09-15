@@ -18,7 +18,7 @@ body {
     line-height: 1.6;
 }
 
-header {
+.header {
     background-color: var(--primary-color);
     color: white;
     padding: 1rem;
@@ -75,12 +75,12 @@ nav {
     font-size: 0.8rem;
 }
 
-main {
+.main {
     max-width: 1200px;
     margin: 2rem auto;
     padding: 0 1rem;
 }
-main h1{
+.main h1{
     color: #FF4500;
 }
 #hero {
@@ -199,7 +199,7 @@ main h1{
     border-radius: 5px;
 }
 
-footer {
+.footer {
     background: var(--primary-color);
     color: white;
     text-align: center;

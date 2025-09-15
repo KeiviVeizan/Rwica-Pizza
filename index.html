@@ -1,113 +1,1265 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="RWRICA PIZZA - Deliciosa comida mexicana especializada en tacos auténticos. Menú amplio, fresco y con entrega rápida.">
-    <title>RWRICA PIZZA - Tacos Auténticos Mexicanos</title>
-    <!-- Enlace a Google Fonts para tipografías modernas y profesionales -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <!-- Enlace a Font Awesome para iconos dinámicos -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Enlace al archivo CSS separado para mejor organización -->
-    <link rel="stylesheet" href="/css/styles.css">
+    <title>Pizza4U - Las Mejores Pizzas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    <div class="header">
-        <nav>
-            <div class="logo">RWRICA PIZZA</div>
-            <ul class="nav-links">
-                <li><a href="#hero">Inicio</a></li>
-                <li><a href="#menu">Menú</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-brand">
+                <i class="fas fa-pizza-slice"></i>
+                <h1>Pizza4U</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                <li><a href="#menu" class="nav-link">Menú</a></li>
+                <li><a href="#nosotros" class="nav-link">Acerca de Nosotros</a></li>
+                <li><a href="#ubicacion" class="nav-link">Cómo Llegar</a></li>
+                <li><a href="#contenido-digital" class="nav-link">+Pizza4U</a></li>
             </ul>
-            <div class="cart-icon">
-                <i class="fas fa-shopping-cart"></i>
-                <span class="cart-count">0</span>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </nav>
-    </div>
+    </header>
 
-    <div class="main">
-        <div id="hero">
-            <h1>Bienvenido a RWRICA PIZZA</h1>
-            <p>Disfruta de nuestros tacos auténticos mexicanos, preparados con ingredientes frescos y sabores tradicionales. ¡Elige tu favorito y ordénalo ahora!</p>
-            <a href="#menu" class="btn">Ver Menú</a>
-        </div>
+    <!-- Main Content -->
+    <main>
+        <!-- Sección Inicio -->
+        <section id="inicio" class="hero-section">
+            <div class="hero-content">
+                <h2>¡Bienvenidos a Pizza4U!</h2>
+                <p>Las mejores pizzas artesanales de la ciudad</p>
+                <button class="cta-button">Ordena Ahora</button>
+            </div>
+            <div class="hero-image">
+                <i class="fas fa-pizza-slice pizza-icon"></i>
+            </div>
+        </section>
 
-        <div id="menu">
-            <h2>Nuestro Menú de Tacos</h2>
-            <div class="menu-grid">
-                <!-- Ejemplo de items del menú, puedes agregar más -->
-                <div class="menu-item">
-                    <img src="https://via.placeholder.com/300x200?text=Taco+al+Pastor" alt="Taco al Pastor">
-                    <div class="menu-item-content">
-                        <h3>Taco al Pastor</h3>
-                        <p>Delicioso taco con carne marinada, piña y cilantro.</p>
-                        <span class="price">$2.50</span>
-                        <button class="add-to-cart btn" data-name="Taco al Pastor" data-price="2.50">Añadir al Carrito</button>
+        <!-- Sección Menú -->
+        <section id="menu" class="menu-section">
+            <div class="container">
+                <h2 class="section-title">Nuestro Menú</h2>
+                <div class="menu-grid">
+                    <div class="menu-card">
+                        <div class="card-icon">
+                            <i class="fas fa-pizza-slice"></i>
+                        </div>
+                        <h3>Pizza Margherita</h3>
+                        <p>Tomate, mozzarella fresca, albahaca</p>
+                        <span class="precio">$15.99</span>
+                    </div>
+                    <div class="menu-card">
+                        <div class="card-icon">
+                            <i class="fas fa-pepper-hot"></i>
+                        </div>
+                        <h3>Pizza Pepperoni</h3>
+                        <p>Pepperoni, mozzarella, salsa especial</p>
+                        <span class="precio">$18.99</span>
+                    </div>
+                    <div class="menu-card">
+                        <div class="card-icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <h3>Pizza Vegetariana</h3>
+                        <p>Vegetales frescos, queso, hierbas</p>
+                        <span class="precio">$17.99</span>
+                    </div>
+                    <div class="menu-card">
+                        <div class="card-icon">
+                            <i class="fas fa-fire"></i>
+                        </div>
+                        <h3>Pizza Especial</h3>
+                        <p>Ingredientes premium, sabor único</p>
+                        <span class="precio">$22.99</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Acerca de Nosotros -->
+        <section id="nosotros" class="about-section">
+            <div class="container">
+                <h2 class="section-title">Acerca de Nosotros</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>Nuestra Historia</h3>
+                        <p>Desde 2010, Pizza4U ha sido el lugar favorito de las familias para disfrutar de auténticas pizzas artesanales. Utilizamos ingredientes frescos y recetas tradicionales.</p>
+                        <h3>Nuestra Misión</h3>
+                        <p>Crear momentos especiales a través de pizzas deliciosas, servicio excepcional y un ambiente acogedor para toda la familia.</p>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <i class="fas fa-pizza-slice"></i>
+                            <h4>50,000+</h4>
+                            <p>Pizzas Vendidas</p>
+                        </div>
+                        <div class="stat-item">
+                            <i class="fas fa-heart"></i>
+                            <h4>15,000+</h4>
+                            <p>Clientes Felices</p>
+                        </div>
+                        <div class="stat-item">
+                            <i class="fas fa-award"></i>
+                            <h4>13</h4>
+                            <p>Años de Experiencia</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Ubicación -->
+        <section id="ubicacion" class="location-section">
+            <div class="container">
+                <h2 class="section-title">¿Cómo Llegar?</h2>
+                <div class="location-content">
+                    <div class="location-info">
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h3>Dirección</h3>
+                                <p>Av. Principal 123, Centro<br>La Paz, Bolivia</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h3>Teléfono</h3>
+                                <p>+591 2 123-4567</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h3>Horarios</h3>
+                                <p>Lun-Dom: 11:00 AM - 11:00 PM</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-car"></i>
+                            <div>
+                                <h3>Transporte</h3>
+                                <p>Líneas de bus: 2, 5, 12<br>Estacionamiento disponible</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="location-map">
+                        <div class="map-placeholder">
+                            <i class="fas fa-map"></i>
+                            <p>Mapa Interactivo</p>
+                            <button class="map-button">Ver en Google Maps</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Contenido Digital -->
+        <section id="contenido-digital" class="digital-content-section">
+            <div class="container">
+                <h2 class="section-title">+Pizza4U - Contenido Digital</h2>
+                
+                <!-- Navegación de contenido -->
+                <div class="content-nav">
+                    <button class="content-btn active" data-content="videos">
+                        <i class="fas fa-play-circle"></i>
+                        Videos
+                    </button>
+                    <button class="content-btn" data-content="imagenes">
+                        <i class="fas fa-images"></i>
+                        Imágenes
+                    </button>
+                    <button class="content-btn" data-content="podcast">
+                        <i class="fas fa-podcast"></i>
+                        Estella Podcast
+                    </button>
+                </div>
+
+                <!-- Contenido de Videos -->
+                <div id="videos" class="content-panel active">
+                    <h3>Videos de Pizza4U</h3>
+                    <div class="video-grid">
+                        <div class="video-card">
+                            <div class="video-thumbnail">
+                                <i class="fas fa-play"></i>
+                                <span>02:45</span>
+                            </div>
+                            <h4>Cómo Hacemos Nuestras Pizzas</h4>
+                            <p>Descubre el proceso artesanal detrás de cada pizza</p>
+                        </div>
+                        <div class="video-card">
+                            <div class="video-thumbnail">
+                                <i class="fas fa-play"></i>
+                                <span>01:30</span>
+                            </div>
+                            <h4>Ingredientes Frescos</h4>
+                            <p>La calidad que marca la diferencia</p>
+                        </div>
+                        <div class="video-card">
+                            <div class="video-thumbnail">
+                                <i class="fas fa-play"></i>
+                                <span>03:15</span>
+                            </div>
+                            <h4>Tour por Nuestra Cocina</h4>
+                            <p>Conoce nuestras instalaciones</p>
+                        </div>
                     </div>
                 </div>
 
-                <div class="menu-item">
-                    <img src="https://via.placeholder.com/300x200?text=Taco+de+Carne+Asada" alt="Taco de Carne Asada">
-                    <div class="menu-item-content">
-                        <h3>Taco de Carne Asada</h3>
-                        <p>Carne asada jugosa con cebolla, cilantro y salsa.</p>
-                        <span class="price">$3.00</span>
-                        <button class="add-to-cart btn" data-name="Taco de Carne Asada" data-price="3.00">Añadir al Carrito</button>
+                <!-- Contenido de Imágenes -->
+                <div id="imagenes" class="content-panel">
+                    <h3>Galería de Imágenes</h3>
+                    <div class="image-gallery">
+                        <div class="image-card">
+                            <div class="image-placeholder">
+                                <i class="fas fa-pizza-slice"></i>
+                            </div>
+                            <p>Pizza Margherita Especial</p>
+                        </div>
+                        <div class="image-card">
+                            <div class="image-placeholder">
+                                <i class="fas fa-utensils"></i>
+                            </div>
+                            <p>Ambiente Familiar</p>
+                        </div>
+                        <div class="image-card">
+                            <div class="image-placeholder">
+                                <i class="fas fa-fire"></i>
+                            </div>
+                            <p>Horno de Leña</p>
+                        </div>
+                        <div class="image-card">
+                            <div class="image-placeholder">
+                                <i class="fas fa-seedling"></i>
+                            </div>
+                            <p>Ingredientes Frescos</p>
+                        </div>
+                        <div class="image-card">
+                            <div class="image-placeholder">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <p>Nuestro Equipo</p>
+                        </div>
+                        <div class="image-card">
+                            <div class="image-placeholder">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <p>Clientes Satisfechos</p>
+                        </div>
                     </div>
                 </div>
 
-                <div class="menu-item">
-                    <img src="https://via.placeholder.com/300x200?text=Taco+de+Pollo" alt="Taco de Pollo">
-                    <div class="menu-item-content">
-                        <h3>Taco de Pollo</h3>
-                        <p>Pollo sazonado con verduras frescas y guacamole.</p>
-                        <span class="price">$2.00</span>
-                        <button class="add-to-cart btn" data-name="Taco de Pollo" data-price="2.00">Añadir al Carrito</button>
+                <!-- Contenido de Podcast -->
+                <div id="podcast" class="content-panel">
+                    <h3>Estella Podcast</h3>
+                    <div class="podcast-content">
+                        <div class="podcast-header">
+                            <div class="podcast-avatar">
+                                <i class="fas fa-microphone"></i>
+                            </div>
+                            <div class="podcast-info">
+                                <h4>Estella - Historias de Sabor</h4>
+                                <p>Tu anfitriona culinaria te cuenta historias fascinantes del mundo gastronómico</p>
+                            </div>
+                        </div>
+                        <div class="podcast-episodes">
+                            <div class="episode-card">
+                                <div class="episode-number">01</div>
+                                <div class="episode-info">
+                                    <h5>El Arte de la Pizza Napolitana</h5>
+                                    <p>Descubre los secretos de la auténtica pizza italiana</p>
+                                    <span class="episode-duration">15 min</span>
+                                </div>
+                                <button class="play-btn">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                            </div>
+                            <div class="episode-card">
+                                <div class="episode-number">02</div>
+                                <div class="episode-info">
+                                    <h5>Ingredientes que Transforman</h5>
+                                    <p>La importancia de la calidad en cada bocado</p>
+                                    <span class="episode-duration">18 min</span>
+                                </div>
+                                <button class="play-btn">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                            </div>
+                            <div class="episode-card">
+                                <div class="episode-number">03</div>
+                                <div class="episode-info">
+                                    <h5>Historia de la Pizzería Familiar</h5>
+                                    <p>Cómo Pizza4U se convirtió en tradición</p>
+                                    <span class="episode-duration">22 min</span>
+                                </div>
+                                <button class="play-btn">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                            </div>
+                        </div>
                     </div>
                 </div>
+            </div>
+        </section>
+    </main>
 
-                <!-- Agrega más items según el menú amplio -->
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <i class="fas fa-pizza-slice"></i>
+                        <h3>Pizza4U</h3>
+                    </div>
+                    <p>Las mejores pizzas artesanales desde 2010</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <p><i class="fas fa-phone"></i> +591 2 123-4567</p>
+                    <p><i class="fas fa-envelope"></i> info@pizza4u.com</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Síguenos</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Pizza4U. Todos los derechos reservados.</p>
             </div>
         </div>
+    </footer>
 
-        <div id="contacto">
-            <h2>Contacto</h2>
-            <p>Envíanos un mensaje o llámanos para pedidos especiales.</p>
-            <form>
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
+    <script>
+        // Navegación responsive
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Navegación suave
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+                // Cerrar menú en móvil
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+
+        // Navegación de contenido digital
+        const contentButtons = document.querySelectorAll('.content-btn');
+        const contentPanels = document.querySelectorAll('.content-panel');
+
+        contentButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const targetContent = button.getAttribute('data-content');
                 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+                // Remover clase active de todos los botones y paneles
+                contentButtons.forEach(btn => btn.classList.remove('active'));
+                contentPanels.forEach(panel => panel.classList.remove('active'));
                 
-                <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje" required></textarea>
-                
-                <button type="submit" class="btn">Enviar</button>
-            </form>
-        </div>
-    </div>
+                // Agregar clase active al botón y panel correspondiente
+                button.classList.add('active');
+                document.getElementById(targetContent).classList.add('active');
+            });
+        });
 
-    <div class="footer">
-        <p>&copy; 2025 RWRICA PIZZA. Todos los derechos reservados.</p>
-    </div>
+        // Animaciones en scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
 
-    <!-- Modal para el carrito (dinámico con JS) -->
-    <div id="cart-modal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2>Tu Carrito</h2>
-            <ul id="cart-items"></ul>
-            <p>Total: <span id="cart-total">$0.00</span></p>
-            <button id="checkout" class="btn">Proceder al Pago</button>
-        </div>
-    </div>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-in');
+                }
+            });
+        }, observerOptions);
 
-    <!-- Script JS para dinamismo -->
-    <script src="/js/script.js"></script>
-</body>
-</html>
+        // Observar elementos para animación
+        document.querySelectorAll('.menu-card, .info-item, .video-card, .image-card, .episode-card').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+
+    <style>
+        /* Reset y configuración base */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fff;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, #ff6b35, #f7931e);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+        }
+
+        .nav-brand {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: white;
+        }
+
+        .nav-brand i {
+            font-size: 2rem;
+        }
+
+        .nav-brand h1 {
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-link {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+        }
+
+        .nav-link:hover {
+            background-color: rgba(255,255,255,0.2);
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+
+        .hamburger span {
+            width: 25px;
+            height: 3px;
+            background: white;
+            margin: 3px 0;
+            transition: 0.3s;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            background: linear-gradient(135deg, #ff6b35, #f7931e);
+            color: white;
+            padding: 120px 2rem 80px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            min-height: 100vh;
+        }
+
+        .hero-content {
+            flex: 1;
+            max-width: 500px;
+        }
+
+        .hero-content h2 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            font-weight: bold;
+        }
+
+        .hero-content p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        .cta-button {
+            background: white;
+            color: #ff6b35;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+
+        .hero-image {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .pizza-icon {
+            font-size: 15rem;
+            opacity: 0.3;
+            animation: rotate 20s linear infinite;
+        }
+
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        /* Secciones generales */
+        section {
+            padding: 80px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: #333;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(135deg, #ff6b35, #f7931e);
+            margin: 1rem auto;
+            border-radius: 2px;
+        }
+
+        /* Sección Menú */
+        .menu-section {
+            background: #f8f9fa;
+        }
+
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .menu-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            opacity: 0;
+            transform: translateY(30px);
+        }
+
+        .menu-card.animate-in {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .menu-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+        }
+
+        .card-icon {
+            font-size: 3rem;
+            color: #ff6b35;
+            margin-bottom: 1rem;
+        }
+
+        .menu-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+
+        .menu-card p {
+            color: #666;
+            margin-bottom: 1rem;
+        }
+
+        .precio {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #ff6b35;
+        }
+
+        /* Sección Acerca de */
+        .about-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 4rem;
+            align-items: start;
+        }
+
+        .about-text h3 {
+            color: #ff6b35;
+            margin-bottom: 1rem;
+        }
+
+        .about-text p {
+            margin-bottom: 2rem;
+            color: #666;
+            font-size: 1.1rem;
+        }
+
+        .about-stats {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 1.5rem;
+            background: linear-gradient(135deg, #ff6b35, #f7931e);
+            color: white;
+            border-radius: 15px;
+        }
+
+        .stat-item i {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-item h4 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Sección Ubicación */
+        .location-section {
+            background: #f8f9fa;
+        }
+
+        .location-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+        }
+
+        .location-info {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .info-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            opacity: 0;
+            transform: translateX(-30px);
+        }
+
+        .info-item.animate-in {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .info-item i {
+            font-size: 1.5rem;
+            color: #ff6b35;
+            margin-top: 0.25rem;
+        }
+
+        .info-item h3 {
+            color: #333;
+            margin-bottom: 0.5rem;
+        }
+
+        .info-item p {
+            color: #666;
+        }
+
+        .location-map {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .map-placeholder {
+            background: white;
+            padding: 3rem;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            width: 100%;
+        }
+
+        .map-placeholder i {
+            font-size: 4rem;
+            color: #ff6b35;
+            margin-bottom: 1rem;
+        }
+
+        .map-button {
+            background: linear-gradient(135deg, #ff6b35, #f7931e);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 25px;
+            margin-top: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .map-button:hover {
+            transform: translateY(-2px);
+        }
+
+        /* Sección Contenido Digital */
+        .digital-content-section {
+            background: white;
+        }
+
+        .content-nav {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .content-btn {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 15px 25px;
+            border: 2px solid #ff6b35;
+            background: transparent;
+            color: #ff6b35;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 1rem;
+            font-weight: 500;
+        }
+
+        .content-btn.active,
+        .content-btn:hover {
+            background: linear-gradient(135deg, #ff6b35, #f7931e);
+            color: white;
+        }
+
+        .content-panel {
+            display: none;
+        }
+
+        .content-panel.active {
+            display: block;
+            animation: fadeIn 0.5s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Videos */
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .video-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            opacity: 0;
+            transform: translateY(30px);
+        }
+
+        .video-card.animate-in {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .video-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .video-thumbnail {
+            background: linear-gradient(135deg, #ff6b35, #f7931e);
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            color: white;
+        }
+
+        .video-thumbnail i {
+            font-size: 3rem;
+        }
+
+        .video-thumbnail span {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            background: rgba(0,0,0,0.7);
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 0.9rem;
+        }
+
+        .video-card h4 {
+            padding: 1rem 1rem 0.5rem;
+            color: #333;
+        }
+
+        .video-card p {
+            padding: 0 1rem 1rem;
+            color: #666;
+        }
+
+        /* Imágenes */
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .image-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            opacity: 0;
+            transform: scale(0.9);
+        }
+
+        .image-card.animate-in {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        .image-card:hover {
+            transform: scale(1.05);
+        }
+
+        .image-placeholder {
+            background: linear-gradient(45deg, #ff6b35, #f7931e);
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+
+        .image-placeholder i {
+            font-size: 3rem;
+        }
+
+        .image-card p {
+            padding: 1rem;
+            text-align: center;
+            color: #333;
+            font-weight: 500;
+        }
+
+        /* Podcast */
+        .podcast-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .podcast-header {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            margin-bottom: 3rem;
+            padding: 2rem;
+            background: linear-gradient(135deg, #ff6b35, #f7931e);
+            color: white;
+            border-radius: 15px;
+        }
+
+        .podcast-avatar {
+            width: 80px;
+            height: 80px;
+            background: rgba(255,255,255,0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .podcast-avatar i {
+            font-size: 2rem;
+        }
+
+        .podcast-info h4 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .podcast-episodes {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .episode-card {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            padding: 1.5rem;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            opacity: 0;
+            transform: translateX(-30px);
+        }
+
+        .episode-card.animate-in {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .episode-card:hover {
+            transform: translateX(10px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+
+        .episode-number {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, #ff6b35, #f7931e);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.2rem;
+            flex-shrink: 0;
+        }
+
+        .episode-info {
+            flex: 1;
+        }
+
+        .episode-info h5 {
+            color: #333;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        .episode-info p {
+            color: #666;
+            margin-bottom: 0.5rem;
+        }
+
+        .episode-duration {
+            color: #ff6b35;
+            font-weight: 500;
+            font-size: 0.9rem;
+        }
+
+        .play-btn {
+            width: 50px;
+            height: 50px;
+            background: #ff6b35;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            flex-shrink: 0;
+        }
+
+        .play-btn:hover {
+            background: #f7931e;
+            transform: scale(1.1);
+        }
+
+        .play-btn i {
+            font-size: 1.2rem;
+        }
+
+        /* Footer */
+        .footer {
+            background: #333;
+            color: white;
+            padding: 3rem 0 1rem;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-brand {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .footer-brand i {
+            font-size: 1.5rem;
+            color: #ff6b35;
+        }
+
+        .footer-section h4 {
+            color: #ff6b35;
+            margin-bottom: 1rem;
+        }
+
+        .footer-section p {
+            margin-bottom: 0.5rem;
+            color: #ccc;
+        }
+
+        .footer-section i {
+            color: #ff6b35;
+            margin-right: 0.5rem;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .social-links a {
+            width: 40px;
+            height: 40px;
+            background: #ff6b35;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .social-links a:hover {
+            background: #f7931e;
+            transform: translateY(-3px);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid #555;
+            color: #ccc;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hamburger {
+                display: flex;
+            }
+
+            .nav-menu {
+                position: fixed;
+                left: -100%;
+                top: 80px;
+                flex-direction: column;
+                background: linear-gradient(135deg, #ff6b35, #f7931e);
+                width: 100%;
+                text-align: center;
+                transition: 0.3s;
+                padding: 2rem 0;
+            }
+
+            .nav-menu.active {
+                left: 0;
+            }
+
+            .hamburger.active span:nth-child(2) {
+                opacity: 0;
+            }
+
+            .hamburger.active span:nth-child(1) {
+                transform: translateY(8px) rotate(45deg);
+            }
+
+            .hamburger.active span:nth-child(3) {
+                transform: translateY(-8px) rotate(-45deg);
+            }
+
+            .hero-section {
+                flex-direction: column;
+                text-align: center;
+                padding: 100px 1rem 60px;
+            }
+
+            .hero-content h2 {
+                font-size: 2.5rem;
+            }
+
+            .pizza-icon {
+                font-size: 8rem;
+                margin-top: 2rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .about-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .about-stats {
+                flex-direction: row;
+                justify-content: space-around;
+            }
+
+            .location-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .content-nav {
+                flex-direction: column;
+                align-items: center;
+                gap: 1rem;
+            }
+
+            .content-btn {
+                width: 200px;
+                justify-content: center;
+            }
+
+            .podcast-header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .episode-card {
+                flex-direction: column;
+                text-align: center;
+                gap: 1rem;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-content h2 {
+                font-size: 2rem;
+            }
+
+            .hero-content p {
+                font-size: 1.1rem;
+            }
+
+            .menu-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .video-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .image-gallery {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        /* Animaciones adicionales */
+        .menu-card:nth-child(1) { animation-delay: 0.1s; }
+        .menu-card:nth-child(2) { animation-delay: 0.2s; }
+        .menu-card:nth-child(3) { animation-delay: 0.3s; }
+        .menu-card:nth-child(4) { animation-delay: 0.4s; }
+
+        .video-card:nth-child(1) { animation-delay: 0.1s; }
+        .video-card:nth-child(2) { animation-delay: 0.2s; }
+        .video-card:nth-child(3) { animation-delay: 0.3s; }
+
+        .image-card:nth-child(1) { animation-delay: 0.1s; }
+        .image-card:nth-child(2) { animation-delay: 0.2s; }
+        .image-card:nth-child(3) { animation-delay: 0.3s; }
+        .image-card:nth-child(4) { animation-delay: 0.4s; }
+        .image-card:nth-child(5) { animation-delay: 0.5s; }
+        .image-card:nth-child(6) { animation-delay: 0.6s; }
+
+        .episode-card:nth-child(1) { animation-delay: 0.1s; }
+        .episode-card:nth-child(2) { animation-delay: 0.2s; }
+        .episode-card:nth-child(3) { animation-delay: 0.3s; }
+
+        .info-item:nth-child(1) { animation-delay: 0.1s; }
+        .info-item:nth-child(2) { animation-delay: 0.2s; }
+        .info-item:nth-child(3) { animation-delay: 0.3s; }
+        .info-item:nth-child(4) { animation-delay: 0.4s; }
+
+        /* Efectos hover adicionales */
+        .cta-button:active {
+            transform: translateY(-1px);
+        }
+
+        .content-btn:active {
+            transform: scale(0.95);
+        }
+
+        .play-btn:active {
+            transform: scale(0.9);
+        }
+    </style>
